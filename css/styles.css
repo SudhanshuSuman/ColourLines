@@ -52,7 +52,7 @@ body {
 
 .border {
     position: absolute;
-    border: 3px solid  rgb(113, 116, 45);
+    border: 3px solid  rgb(48, 63, 85);
     border-radius: 50px;
     width: 300px;
     height: 575px;
@@ -83,7 +83,7 @@ body {
 .highlight {
     /* font-family: 'Satisfy', cursive; */
     font-family: 'Kaushan Script', cursive;
-    color: rgb(252, 255, 61);
+    color: rgb(142, 172, 255);
     animation: appear 1.5s ease;
 }
 
