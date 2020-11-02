@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: roboto;
+    font-size: 40pt;
+    top: 15px;
+    left: 60px;
+}
+
+.first {
+    /* background-color:rgb(0, 21, 255); */
+    height: 100%;
+    /* background-image: url("../img/1.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.left {
+    float: left;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(132, 0, 255); */
+}
+
+.quote {
+    padding: 0px 0px 0px 65px;
+    padding-left: 65px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    text-align: left;
+    color: white;
+    z-index: 3;
+}
+
+.right {
+    float: left;
+    position: relative;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    padding-top: 150px;
+    /* padding-left: 45%; */
+    /* background-color: aqua; */
+    transition: transform 1.5s;
+}
+
+.border {
+    position: absolute;
+    border: 3px solid  rgb(113, 116, 45);
+    border-radius: 50px;
+    width: 300px;
+    height: 575px;
+    top: 14%;
+    left: 47%;
+    z-index: -1;
+}
+/* .border {
+    position: absolute;
+    border: 3px solid rgb(143, 143, 143);
+    border-radius: 50px;
+    width: 800px;
+    height: 570px;
+    top: 14%;
+    left: 30%;
+    z-index: -1;
+} */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.highlight {
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(252, 255, 61);
+    animation: appear 1.5s ease;
+}
+
+.y-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    transition: transform 1s;
+}
+
+@keyframes round-effect {
+    0%   { border-radius: 0px; }
+    35%  { border-radius: 3px; }
+    100% { border-radius: 0px; }
+}
+
+.line {
+    display: inline-flex;
+    height: 7px;
+    background-color: green;
+    transition: transform 0.1s;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.line:hover {
+    /* position: fixed; */
+    /* transform: translateX(+20%); */
+    transform: scaleX(1.2);
+    /* animation: round-effect 0.1s ease; */
+}
+
+.tab-space-1 {
+    margin-left: 50px;
+}
+.tab-space-2 {
+    margin-left: 100px;
+}
